@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Raihan Maulana</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #101827, #1e3a5f);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 750px;
+            text-align: center;
+        }
+
+        .tag {
+            color: #60a5fa;
+            letter-spacing: 3px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        .menu {
+            text-align: left;
+        }
+
+        /* ORDERED LIST */
+        .menu ol {
+            padding-left: 30px;
+        }
+
+        .menu li {
+            margin-bottom: 18px;
+            padding-left: 12px;
+        }
+
+        .menu li::marker {
+            color: #60a5fa;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* CARD */
+        .card {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 15px;
+            padding: 23px;
+            text-align: left;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-4px);
+        }
+
+        .card h2 {
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        /* BUTTON */
+        .card a {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 11px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .card a:hover {
+            background: #2563eb;
+            transform: scale(1.04);
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 40px;
+            color: #94a3b8;
+            font-size: 12px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 29px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="tag">PERSONAL PORTFOLIO</div>
+
+        <h1>Selamat Datang!</h1>
+
+        <p class="description">
+            Berikut merupakan kumpulan dokumen lamaran kerja
+            dan Curriculum Vitae (CV) saya.
+            Silakan pilih salah satu menu di bawah ini.
+        </p>
+
+        <!-- MENU DENGAN ORDERED LIST -->
+        <div class="menu">
+
+            <ol>
+
+                <li>
+                    <div class="card">
+                        <h2>Surat Lamaran Kerja</h2>
+                        <p>
+                            Dokumen surat pengajuan lamaran pekerjaan.
+                        </p>
+                        <a href="https://canva.link/n5c6ok005mptt3m" target="_blank">
+                            Lihat Surat →
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="card">
+                        <h2>CV Website</h2>
+                        <p>
+                            Riwayat hidup dan informasi diri
+                            dalam bentuk website.
+                        </p>
+                        <a href="https://raihanmaulana11.github.io/CV-Raihan/" target="_blank">
+                            Buka CV Website →
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="card">
+                        <h2>CV PowerPoint</h2>
+                        <p>
+                            Curriculum Vitae dalam bentuk
+                            presentasi PowerPoint.
+                        </p>
+                        <a href="https://canva.link/f3t33n6c507t0nz" target="_blank">
+                            Lihat CV PPT →
+                        </a>
+                    </div>
+                </li>
+
+            </ol>
+
+        </div>
+
+        <footer>
+            © 2026 Raihan Maulana Setiawan | Personal Portfolio
+        </footer>
+
+    </div>
+
+</body>
+</html>
